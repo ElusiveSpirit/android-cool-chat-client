@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/colorPrimaryBackground"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_dialogs_search_container"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:padding="@dimen/padding_main"
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/main_dialogs_search"
+            android:hint="Поиск..."
+            android:textSize="@dimen/dialog_text_size"
+            android:nextFocusUp="@id/main_dialogs_search"
+            android:nextFocusLeft="@id/main_dialogs_search"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/main_dialogs_clear_search"
+            android:visibility="gone"
+            android:src="@drawable/ic_clear_black_18dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/all_dialogs_listView"
+        android:divider="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/main_dialogs_not_found"
+        android:text="@string/nothing_was_found"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

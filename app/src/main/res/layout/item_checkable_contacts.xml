@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:weightSum="1">
+
+    <CheckedTextView
+        android:id="@+id/checkedContact"
+        android:checkMark="@drawable/item_check"
+        android:checked="true"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:drawablePadding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="User Login"
+        android:gravity="center_vertical"
+        android:paddingRight="25dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+</LinearLayout>
